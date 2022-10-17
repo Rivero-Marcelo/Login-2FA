@@ -31,7 +31,7 @@
 
 - Ejecutar npm install && npm run build
 
-- Iniciar la aplicación en localhost:80080
+- Iniciar la aplicación en localhost:8080
 
 - Cuando lo solicite, ejecutar la migraciones y refrescar pantalla
 
