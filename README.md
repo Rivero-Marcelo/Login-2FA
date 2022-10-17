@@ -9,7 +9,30 @@
 
 <h2>INSTALACION</h2>
 
-.env    (parametros base datos)
-composer install
-generar claves :  php artisan key:generate 
-migraciones
+- Editar archivo .env con los parametros:
+
+        DB_CONNECTION=mysql
+
+        DB_HOST=mysql
+
+        DB_PORT=3306
+
+        DB_DATABASE=laravel
+
+        DB_USERNAME=root
+
+        DB_PASSWORD=1234
+
+- Ejecutar composer install
+
+- Generar claves de aplicación con:  php artisan key:generate
+
+- Ejecutar docker-compose up
+
+- Ejecutar npm install && npm run build
+
+- Iniciar la aplicación en localhost:80080
+
+- Cuando lo solicite, ejecutar la migraciones y refrescar pantalla
+
+- Servidor correo MAILHOG para validación de correo y cambio de contraseña: localhost:8025
