@@ -1,5 +1,6 @@
 version: '3.8'
 services:
+  
   app:
     build: 
       context: ./
@@ -7,10 +8,10 @@ services:
     restart: unless-stopped
     tty: true
     ports:
-      - "8080:8080"
+      - "8080:80"
       - '${VITE_PORT:-5173}:${VITE_PORT:-5173}'
     volumes:
-      - ./:/app
+      - ./:/var/www/html/
     networks:
       - app 
     depends_on:
